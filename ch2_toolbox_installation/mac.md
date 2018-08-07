@@ -41,11 +41,29 @@ setvirtualenvproject
 pip install marvin-python-toolbox
 ```
 
-6. Test the installation
+6. Creating a new engine
 ```
+workon python-toolbox-env
+marvin engine-generate
+```
+Respond to the prompt and wait for the engine environment preparation to complete. Don't forget to start dev box before if you are using vagrant.
+
+7. Test the new engine
+```
+workon <new_engine_name>-env
 marvin test
 ```
 
-7. Youtube tutorial
+8. Bring up the notebook and access it from your browser
+```
+marvin notebook
+```
+
+9. For more information
+```
+marvin --help
+```
+
+10. Youtube tutorial
 
 [![Python Toolbox Install](http://img.youtube.com/vi/2iljFG9EZ_Q/0.jpg)](https://www.youtube.com/watch?v=2iljFG9EZ_Q "Python Toolbox Install")
